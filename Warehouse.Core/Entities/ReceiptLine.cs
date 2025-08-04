@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Warehouse.Core.Entities
 {
-    public class ReceiptLine
+    public class ReceiptLine : BaseWarehouseEntity
     {
-        public int Id { get; set; }
-
         public int ReceiptId { get; set; }
 
         public int ResourceId { get; set; }

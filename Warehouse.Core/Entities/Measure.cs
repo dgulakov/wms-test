@@ -7,10 +7,8 @@ using Warehouse.Core.Enums;
 
 namespace Warehouse.Core.Entities
 {
-    public class Measure
+    public class Measure : BaseWarehouseEntity
     {
-        public int Id { get; set; }
-
         public string Name { get; set; } = "";
 
         public WarehouseEntityStatus Status { get; set; } = WarehouseEntityStatus.Active;
