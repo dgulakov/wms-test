@@ -5,12 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Warehouse.Core.Entities
-{
-    public abstract class BaseWarehouseEntity
-    {
-        public int Id { get; protected set; }
+namespace Warehouse.Core.Entities;
 
-        public byte[] ConcurencyToken { get; set; } = [];
-    }
+public abstract class BaseWarehouseEntity
+{
+    public Guid Id { get; protected set; }
+
+    public byte[] ConcurencyToken { get; set; } = [];
 }
